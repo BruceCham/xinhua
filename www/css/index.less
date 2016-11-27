@@ -1,0 +1,493 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+:after,
+:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+input,
+textarea {
+    -webkit-appearance: none;
+}
+
+a,
+img,
+button,
+input,
+textarea {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+img {
+    display: block;
+}
+
+.fn-clear:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0
+}
+
+.fn-clear {
+    zoom: 1
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    background: #fc2c3b;
+}
+
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 必备 */
+
+.ani {
+    position: absolute;
+}
+
+
+/* 分页中的小点 */
+
+.swiper-pagination-bullet {
+    background: #4e4f52;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background: #d4d4d7;
+    opacity: 1;
+}
+.audioImg{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    z-index: 99999;
+    background: url(../images/music1.png) no-repeat;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    background-size: 60px 60px;
+    &.active{
+        background: url(../images/music.png) no-repeat;
+        background-size: 60px 60px;
+    }
+}
+.page1 {
+    background: url('../images/1.jpg') no-repeat;
+    background-size: 100% auto;
+}
+
+.page2 {
+    background: url('../images/2.jpg') no-repeat;
+    background-size: 100% auto;
+}
+
+.page3 {
+    background: url('../images/3.jpg') no-repeat;
+    background-size: 100% auto;
+}
+
+.page4 {
+    background: url('../images/4.jpg') no-repeat;
+    background-size: 100% auto;
+}
+
+.page5 {
+    background: url('../images/5.jpg') no-repeat;
+    background-size: 100% auto;
+}
+
+.page6 {
+    background: url('../images/6.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+
+.page7 {
+    background: url('../images/7.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+
+.animated {
+    display: none;
+}
+
+@design-width: 750rem;
+@per: @design-width / 10;
+.btnYun {
+    position: fixed;
+    display: none;
+    bottom: 10/@per;
+    left: 322/@per;
+    z-index: 9999;
+    animation: indicator 1.2s infinite ease-out;
+    -webkit-animation: indicator 1.2s infinite ease-out;
+}
+
+@-webkit-keyframes indicator {
+    from {
+        opacity: 1;
+    }
+    to {
+        bottom: 50/@per;
+        opacity: 0.5;
+    }
+}
+
+@keyframes indicator {
+    from {
+        opacity: 1;
+    }
+    to {
+        bottom: 50/@per;
+        opacity: 0.5;
+    }
+}
+
+.page1 {
+    .logo {
+        position: absolute;
+        top: 60/@per;
+        left: 230/@per;
+        width: 276/@per;
+    }
+    .yuanpan {
+        position: absolute;
+        top: 185/@per;
+        left: 75/@per;
+        width: 600/@per;
+    }
+    .xiaoji {
+        position: absolute;
+        top: 100/@per;
+        right: 40/@per;
+        width: 151/@per;
+    }
+    .xiangyun {
+        position: absolute;
+        top: 250/@per;
+        left: 65/@per;
+        width: 621/@per;
+    }
+    .duilian {
+        position: absolute;
+        top: 144/@per;
+        left: 260/@per;
+        width: 241/@per;
+    }
+    .people1 {
+        position: absolute;
+        top: 746/@per;
+        left: 0;
+        width: 299/@per;
+    }
+    .people2 {
+        position: absolute;
+        top: 930/@per;
+        right: 0;
+        width: 244/@per;
+    }
+    .words {
+        position: absolute;
+        top: 930/@per;
+        left: 82/@per;
+        width: 580/@per;
+    }
+}
+
+.page2 {
+    .logo {
+        position: absolute;
+        top: 110/@per;
+        left: 230/@per;
+        width: 276/@per;
+    }
+    .words {
+        position: absolute;
+        top: 195/@per;
+        left: 77/@per;
+        width: 558/@per;
+    }
+    .words2 {
+        position: absolute;
+        top: 933/@per;
+        left: 140/@per;
+        width: 443/@per;
+    }
+}
+
+.page3 {
+    .yunzi {
+        position: absolute;
+        width: 494/@per;
+        top: 835/@per;
+        left: 96/@per;
+    }
+    .words {
+        position: absolute;
+        width: 550/@per;
+        top: 184/@per;
+        left: 105/@per;
+    }
+    .logos {
+        position: absolute;
+        top: 750/@per;
+        left: 230/@per;
+        width: 276/@per;
+    }
+}
+
+.page4 {
+    .dapan {
+        position: absolute;
+        top: 145/@per;
+        left: 103/@per;
+        width: 538/@per;
+    }
+    .word1 {
+        position: absolute;
+        top: 85/@per;
+        left: 98/@per;
+        width: 277/@per;
+    }
+    .kuaizi {
+        position: absolute;
+        top: 18/@per;
+        right: 0px;
+        width: 244/@per;
+    }
+    .word2 {
+        position: absolute;
+        top: 620/@per;
+        left: 100/@per;
+        width: 562/@per;
+    }
+    .logo {
+        position: absolute;
+        top: 990/@per;
+        left: 195/@per;
+        width: 345/@per;
+    }
+}
+
+.page5 {
+    .words1 {
+        position: absolute;
+        width: 485/@per;
+        left: 122/@per;
+        top: 95/@per;
+    }
+    .words2 {
+        position: absolute;
+        width: 449/@per;
+        left: 150/@per;
+        top: 475/@per;
+    }
+    .words3 {
+        position: absolute;
+        width: 462/@per;
+        left: 140/@per;
+        top: 1010/@per;
+    }
+}
+
+.page6 {
+    .pan {
+        position: absolute;
+        width: 750/@per;
+        top: 10/@per;
+        left: 0;
+    }
+    .words1 {
+        position: absolute;
+        width: 561/@per;
+        left: 90/@per;
+        top: 125/@per;
+    }
+    .words2 {
+        position: absolute;
+        width: 618/@per;
+        left: 52/@per;
+        top: 815/@per;
+    }
+    .words3 {
+        position: absolute;
+        width: 606/@per;
+        left: 60/@per;
+        top: 980/@per;
+    }
+}
+
+.page7 {
+    .sections {
+        width: 640/@per;
+        margin: 175/@per auto 0;
+        border-radius: 20/@per;
+        padding: 35/@per 95/@per;
+        background: #fff7e2;
+        .title {
+            text-align: center;
+            color: #ff3b3b;
+            line-height: 50/@per;
+            font-size: 36px;
+        }
+        .page-item {
+            position: relative;
+            padding-bottom: 35/@per;
+            input {
+                width: 100%;
+                border: 1px solid #ffc424;
+                border-radius: 4px;
+                height: 64/@per;
+                line-height: 64/@per;
+                padding: 0 20/@per;
+                font-size: 24px;
+                &.inputDate {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    opacity: 0;
+                    z-index: 1;
+                }
+            }
+            .error {
+                display: none;
+                position: absolute;
+                bottom: 5px;
+                left: 0px;
+                color: red;
+                font-size: 20px;
+            }
+            &.sex-item {
+                color: #3b0f52;
+                .ele {
+                    margin-right: 30/@per;
+                    float: left;
+                    font-size: 32px;
+                }
+                .ele2 {
+                    float: left;
+                    font-size: 32px;
+                    margin-top: 5px;
+                    margin-right: 80/@per;
+                    >div {
+                        position: relative;
+                        width: 32px;
+                        height: 32px;
+                        text-align: center;
+                        border-radius: 50%;
+                        border: 2px solid #ffc424;
+                        p {
+                            position: absolute;
+                            top: 4px;
+                            left: 4px;
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            &.active {
+                                background: #ffc424;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .btnToSubmit {
+            width: 240/@per;
+            height: 80/@per;
+            margin: 50/@per auto 0;
+            line-height: 80/@per;
+            text-align: center;
+            background: #ff4646;
+            color: #ffc424;
+            border-radius: 10px;
+            font-size: 30px;
+        }
+    }
+}
+
+.page-error {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    .bgimg {
+        width: 433/@per;
+        display: block;
+        margin: 0 auto;
+    }
+    .error-msg {
+        color: #e72824;
+        text-align: center;
+        font-size: 32px;
+        padding-top: 55/@per;
+        padding-bottom: 40/@per;
+    }
+    a {
+        text-decoration: none;
+        .btn {
+            width: 240/@per;
+            height: 80/@per;
+            line-height: 80/@per;
+            text-align: center;
+            color: #ffc724;
+            margin: 0 auto;
+            background: #ff4545;
+            border-radius: 6px;
+        }
+    }
+    .logo {
+        margin: 110/@per auto 0;
+        width: 480/@per;
+        display: block;
+    }
+}
+
+.page-success {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: url(../images/8.jpg) no-repeat #b0121a;
+    background-size: 100% 100%;
+    .box {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        img.panzi {
+            width: 454/@per;
+            margin: 0 auto;
+            display: block;
+        }
+        .info {
+            text-align: center;
+            color: #1c407b;
+            font-size: 32px;
+            font-weight: 900;
+            height: 160px;
+            padding: 30px;
+            line-height: 50px;
+            background: #fff7e2;
+        }
+    }
+}
