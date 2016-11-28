@@ -3,7 +3,7 @@ var gulp = require("gulp"),
 
 gulp.task('default', function() {
     connect.server({
-        root: './www/jin_pro/',
+        root: './www/',
         port: 8090
     });
 });
