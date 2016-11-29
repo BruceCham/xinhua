@@ -194,6 +194,10 @@ body {
         top: 100/@per;
         right: 40/@per;
         width: 151/@per;
+        animation: xiaojichimi 3s infinite;
+        animation-direction: alternate;
+        -webkit-animation: xiaojichimi 3s infinite;
+        -webkit-animation-direction: alternate;
     }
     .xiangyun {
         position: absolute;
@@ -216,6 +220,8 @@ body {
         top: 746/@per;
         left: 0;
         width: 299/@per;
+        animation: canglaomou 5s linear;
+        -webkit-animation: canglaomou 5s linear;
     }
     .people2 {
         position: absolute;
@@ -336,6 +342,27 @@ body {
         width: 394/@per;
         left: 175/@per;
         top: 1028/@per;
+    }
+    .img1 {
+        position: absolute;
+        width: 1172/@per;
+        z-index: 3;
+        left: 0;
+        bottom: 50/@per;
+    }
+    .img4 {
+        position: absolute;
+        width: 1172/@per;
+        z-index: 3;
+        left: -185/@per;
+        bottom: 50/@per;
+    }
+    .img5 {
+        position: absolute;
+        width: 1172/@per;
+        z-index: 3;
+        left: -374/@per;
+        bottom: 50/@per;
     }
 }
 
@@ -721,6 +748,48 @@ body {
     }
 }
 
+@keyframes canglaomou {
+    0% {
+        left: -299/@per;
+    }
+    25% {
+        left: -299/@per;
+    }
+    30% {
+        left: -100/@per;
+    }
+    50% {
+        left: -100/@per;
+    }
+    65% {
+        left: 0;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+@-webkit-keyframes canglaomou {
+    0% {
+        left: -299/@per;
+    }
+    25% {
+        left: -299/@per;
+    }
+    30% {
+        left: -100/@per;
+    }
+    50% {
+        left: -100/@per;
+    }
+    65% {
+        left: 0;
+    }
+    100% {
+        left: 0;
+    }
+}
+
 @keyframes loading2 {
     from {
         transform: rotate(0deg)
@@ -809,20 +878,47 @@ body {
     }
 }
 
-@keyframes myname {
-    from {
-        transform: rotateY(0)
+@keyframes xiaojichimi {
+    0% {
+        transform: rotate(0deg)
     }
-    to {
-        transform: rotateY(180deg)
+    30% {
+        transform: rotate(0deg)
+    }
+    40% {
+        transform: rotate(-15deg)
+    }
+    50% {
+        transform: rotate(-30deg)
+    }
+    60% {
+        transform: rotate(-30deg)
+    }
+    70% {
+        transform: rotate(-15deg)
+    }
+    80% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(0deg)
     }
 }
 
-@-webkit-keyframes myname {
-    from {
-        -webkit-transform: rotateY(0)
+@-webkit-keyframes xiaojichimi {
+    0% {
+        transform: rotate(0deg)
     }
-    to {
-        -webkit-transform: rotateY(180deg)
+    30% {
+        transform: rotate(0deg)
+    }
+    60% {
+        transform: rotate(-35deg)
+    }
+    90% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(0deg)
     }
 }
