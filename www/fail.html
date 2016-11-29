@@ -59,6 +59,14 @@
         refreshRem();
     })(window);
     </script>
+    <script>
+        var script = document.createElement('script');
+        script.src = "js/test.js";
+        document.getElementsByTagName('head')[0].appendChild( script );
+        script.onload = function(e){
+            console.log( e.data )
+        }
+    </script>
 </body>
 
 </html>
